@@ -46,8 +46,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnU-eL-cYf">
                                 <rect key="frame" x="303" y="28" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.041714437090000001" green="1" blue="0.68370620479999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="地图"/>
+                                <state key="normal" backgroundImage="ic_sport_map"/>
                                 <connections>
                                     <action selector="actionOpenMap:" destination="F9w-MU-kaK" eventType="touchUpInside" id="cHy-CE-kbw"/>
                                 </connections>
@@ -110,17 +109,17 @@
                                 <blurEffect style="light"/>
                             </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGd-7U-VI8">
-                                <rect key="frame" x="16" y="524" width="31" height="30"/>
+                                <rect key="frame" x="16" y="497" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="ic_waterprint_close"/>
+                                <state key="normal" backgroundImage="ic_waterprint_close_pressed"/>
                                 <connections>
                                     <action selector="actionCloseMap:" destination="e9f-ao-MUl" eventType="touchUpInside" id="wAb-p5-288"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DVa-SL-OHZ">
-                                <rect key="frame" x="8" y="368" width="46" height="30"/>
+                                <rect key="frame" x="37" y="368" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="回"/>
+                                <state key="normal" backgroundImage="ic_sport_screenlight"/>
                                 <connections>
                                     <action selector="actionBackLocation:" destination="e9f-ao-MUl" eventType="touchUpInside" id="fZI-oH-v36"/>
                                 </connections>
@@ -140,6 +139,8 @@
     <resources>
         <image name="ic_sport_camera" width="27" height="27"/>
         <image name="ic_sport_finish" width="100" height="100"/>
-        <image name="ic_waterprint_close" width="32" height="32"/>
+        <image name="ic_sport_map" width="30" height="30"/>
+        <image name="ic_sport_screenlight" width="50" height="50"/>
+        <image name="ic_waterprint_close_pressed" width="32" height="32"/>
     </resources>
 </document>

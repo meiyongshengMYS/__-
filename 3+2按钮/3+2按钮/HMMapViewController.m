@@ -20,10 +20,10 @@
 @implementation HMMapViewController
 
 - (void)viewDidLoad {
-//    [super viewDidLoad];
+    [super viewDidLoad];
 //    self.view.backgroundColor = [UIColor whiteColor];
-//    self.mgr = [CLLocationManager new];
-//    [self.mgr requestWhenInUseAuthorization];
+    self.mgr = [CLLocationManager new];
+    [self.mgr requestWhenInUseAuthorization];
 //    /*
 //     typedef NS_ENUM(NSInteger, MKUserTrackingMode) {
 //     MKUserTrackingModeNone = 0, // the user's location is not followed
@@ -41,6 +41,7 @@
 }
 
 - (IBAction)actionOpenCamera:(id)sender {
+    
 }
 
 - (IBAction)actionBackLocation:(id)sender {

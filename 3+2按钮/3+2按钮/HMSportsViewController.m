@@ -8,6 +8,9 @@
 
 #import "HMSportsViewController.h"
 #import "HMMapViewController.h"
+#import "cycleAnimator.h"
+
+
 
 @interface HMSportsViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *continPauseButton;
@@ -20,7 +23,7 @@
 @implementation HMSportsViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
+     [super viewDidLoad];
      [self.continPauseButton setImage:[UIImage imageNamed:@"ic_sport_continue"] forState:UIControlStateNormal];
      [self.continPauseButton setImage:[UIImage imageNamed:@"ic_sport_pause"] forState:UIControlStateSelected];
 //    [self.continPauseButton setImage:[UIImage imageNamed:@"ic_sport_continue"] forState:UIControlStateHighlighted];
@@ -75,6 +78,12 @@
 - (IBAction)actionOpenMap:(UIButton *)sender {
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Sports" bundle:nil];
     HMMapViewController *vc = [sb instantiateViewControllerWithIdentifier:@"HMMapViewController"];
+    
+    
+    cycleAnimator *animator = [cycleAnimator new];
+    animator.centerPoint = sender.center;
+    
+    vc.animator = animator;
     [self presentViewController:vc  animated:YES completion:nil];
 }
 

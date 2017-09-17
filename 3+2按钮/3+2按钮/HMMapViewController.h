@@ -6,8 +6,8 @@
 //  Copyright © 2017年 mei. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface HMMapViewController : UIViewController
+@interface HMMapViewController : BaseViewController
 
 @end
