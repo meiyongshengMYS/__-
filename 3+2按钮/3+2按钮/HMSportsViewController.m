@@ -58,7 +58,7 @@
             [self.view layoutIfNeeded];
         } completion:^(BOOL finished) {
 //            [self.continPauseButton setImage:[UIImage imageNamed:@"ic_sport_continue"] forState:UIControlStateNormal];
-            self.continPauseButton.selected = NO;
+           // self.continPauseButton.selected = NO;
         }];
     }else{
         //继续->暂停137
@@ -68,11 +68,11 @@
             [self.view layoutIfNeeded];
         } completion:^(BOOL finished) {
 //            [self.continPauseButton setImage:[UIImage imageNamed:@"ic_sport_pause"] forState:UIControlStateSelected];
-            self.continPauseButton.selected = YES;
+           // self.continPauseButton.selected = YES;
             
         }];
     }
-//    self.continPauseButton.selected = !button.isSelected;
+    self.continPauseButton.selected = !button.isSelected;
 
 }
 - (IBAction)actionOpenMap:(UIButton *)sender {

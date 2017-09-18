@@ -10,8 +10,6 @@
 		AC253B1A1F6E53FE002216E4 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC253B191F6E53FE002216E4 /* BaseViewController.m */; };
 		AC253B1F1F6EA103002216E4 /* animator.m in Sources */ = {isa = PBXBuildFile; fileRef = AC253B1E1F6EA103002216E4 /* animator.m */; };
 		AC253B221F6EA3DE002216E4 /* cycleAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = AC253B211F6EA3DE002216E4 /* cycleAnimator.m */; };
-		AC253B291F6EAAB2002216E4 /* HMAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = AC253B261F6EAAB2002216E4 /* HMAnimator.m */; };
-		AC253B2A1F6EAAB2002216E4 /* HMCycleAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = AC253B281F6EAAB2002216E4 /* HMCycleAnimator.m */; };
 		ACF119ED1F56D4D1007F2D55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF119EC1F56D4D1007F2D55 /* main.m */; };
 		ACF119F01F56D4D1007F2D55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF119EF1F56D4D1007F2D55 /* AppDelegate.m */; };
 		ACF119F31F56D4D1007F2D55 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF119F21F56D4D1007F2D55 /* ViewController.m */; };
@@ -32,10 +30,6 @@
 		AC253B1E1F6EA103002216E4 /* animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = animator.m; sourceTree = "<group>"; };
 		AC253B201F6EA3DE002216E4 /* cycleAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cycleAnimator.h; sourceTree = "<group>"; };
 		AC253B211F6EA3DE002216E4 /* cycleAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cycleAnimator.m; sourceTree = "<group>"; };
-		AC253B251F6EAAB2002216E4 /* HMAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMAnimator.h; sourceTree = "<group>"; };
-		AC253B261F6EAAB2002216E4 /* HMAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMAnimator.m; sourceTree = "<group>"; };
-		AC253B271F6EAAB2002216E4 /* HMCycleAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMCycleAnimator.h; sourceTree = "<group>"; };
-		AC253B281F6EAAB2002216E4 /* HMCycleAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMCycleAnimator.m; sourceTree = "<group>"; };
 		ACF119E81F56D4D1007F2D55 /* 3+2按钮.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "3+2按钮.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF119EC1F56D4D1007F2D55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ACF119EE1F56D4D1007F2D55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -89,17 +83,6 @@
 			path = HMAnimator;
 			sourceTree = "<group>";
 		};
-		AC253B241F6EAAB2002216E4 /* copy */ = {
-			isa = PBXGroup;
-			children = (
-				AC253B251F6EAAB2002216E4 /* HMAnimator.h */,
-				AC253B261F6EAAB2002216E4 /* HMAnimator.m */,
-				AC253B271F6EAAB2002216E4 /* HMCycleAnimator.h */,
-				AC253B281F6EAAB2002216E4 /* HMCycleAnimator.m */,
-			);
-			path = copy;
-			sourceTree = "<group>";
-		};
 		ACF119DF1F56D4D1007F2D55 = {
 			isa = PBXGroup;
 			children = (
@@ -122,7 +105,6 @@
 			children = (
 				AC253B171F6E53E5002216E4 /* HMBase */,
 				AC253B1C1F6EA0E8002216E4 /* animator */,
-				AC253B241F6EAAB2002216E4 /* copy */,
 				ACF11A041F56D68F007F2D55 /* HMSportsViewController.h */,
 				ACF11A051F56D68F007F2D55 /* HMSportsViewController.m */,
 				ACF43C761F6BBCD800759D70 /* HMMapViewController.h */,
@@ -231,12 +213,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC253B1F1F6EA103002216E4 /* animator.m in Sources */,
-				AC253B2A1F6EAAB2002216E4 /* HMCycleAnimator.m in Sources */,
 				ACF119F31F56D4D1007F2D55 /* ViewController.m in Sources */,
 				AC253B221F6EA3DE002216E4 /* cycleAnimator.m in Sources */,
 				ACF43C781F6BBCD800759D70 /* HMMapViewController.m in Sources */,
 				ACF119F01F56D4D1007F2D55 /* AppDelegate.m in Sources */,
-				AC253B291F6EAAB2002216E4 /* HMAnimator.m in Sources */,
 				ACF11A061F56D68F007F2D55 /* HMSportsViewController.m in Sources */,
 				AC253B1A1F6E53FE002216E4 /* BaseViewController.m in Sources */,
 				ACF119ED1F56D4D1007F2D55 /* main.m in Sources */,

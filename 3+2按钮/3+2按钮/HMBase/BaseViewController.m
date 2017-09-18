@@ -7,7 +7,7 @@
 //
 
 #import "BaseViewController.h"
-#import "HMCycleAnimator.h"
+
 
 @interface BaseViewController ()
 
