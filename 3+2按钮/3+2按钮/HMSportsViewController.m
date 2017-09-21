@@ -86,5 +86,11 @@
     vc.animator = animator;
     [self presentViewController:vc  animated:YES completion:nil];
 }
+- (IBAction)actionOpenCamera:(UIButton *)sender {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Sports" bundle:nil];
+    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"CameraViewController"];
+    [self presentViewController:vc animated:YES completion:nil];
+    
+}
 
 @end

@@ -40,9 +40,6 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (IBAction)actionOpenCamera:(id)sender {
-    
-}
 
 - (IBAction)actionBackLocation:(id)sender {
     /*

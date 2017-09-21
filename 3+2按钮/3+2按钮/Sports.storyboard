@@ -51,6 +51,15 @@
                                     <action selector="actionOpenMap:" destination="F9w-MU-kaK" eventType="touchUpInside" id="cHy-CE-kbw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQb-gc-5cv">
+                                <rect key="frame" x="26" y="600" width="36" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.17851199579999999" blue="0.17610290840000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" backgroundImage="ic_sport_camera"/>
+                                <connections>
+                                    <action selector="actionOpenCamera:" destination="F9w-MU-kaK" eventType="touchUpInside" id="RHs-ew-zdN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -95,16 +104,6 @@
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="ptE-kv-vr4">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="105"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uc-XN-p7q">
-                                            <rect key="frame" x="8" y="35" width="40" height="35"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" backgroundImage="ic_sport_camera"/>
-                                            <connections>
-                                                <action selector="actionOpenCamera:" destination="e9f-ao-MUl" eventType="touchUpInside" id="LxR-OI-ycN"/>
-                                            </connections>
-                                        </button>
-                                    </subviews>
                                 </view>
                                 <blurEffect style="light"/>
                             </visualEffectView>
@@ -135,12 +134,96 @@
             </objects>
             <point key="canvasLocation" x="768.79999999999995" y="184.85757121439281"/>
         </scene>
+        <!--Camera View Controller-->
+        <scene sceneID="9k1-cO-hLj">
+            <objects>
+                <viewController storyboardIdentifier="CameraViewController" id="ZM9-7C-mPK" customClass="CameraViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KSL-78-lRN"/>
+                        <viewControllerLayoutGuide type="bottom" id="WEL-KE-r9v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pJ9-Gd-RGl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k0G-OS-ldw">
+                                <rect key="frame" x="0.0" y="539" width="375" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="8Tg-ET-7gi">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ofy-B5-As0">
+                                            <rect key="frame" x="19" y="55" width="30" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" backgroundImage="ic_waterprint_close"/>
+                                            <state key="highlighted" backgroundImage="ic_waterprint_close_pressed"/>
+                                            <connections>
+                                                <action selector="actionCloseVC:" destination="ZM9-7C-mPK" eventType="touchUpInside" id="JHB-SA-1jV"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMd-Qy-iQU">
+                                            <rect key="frame" x="162" y="46" width="51" height="48"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" backgroundImage="ic_waterprint_shutter"/>
+                                            <state key="selected" backgroundImage="ic_select_selected"/>
+                                            <state key="highlighted" backgroundImage="ic_waterprint_shutter_pressed"/>
+                                            <connections>
+                                                <action selector="actionOpenCamera:" destination="ZM9-7C-mPK" eventType="touchUpInside" id="Yup-x0-OSz"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIJ-64-az6">
+                                            <rect key="frame" x="308" y="51" width="39" height="39"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" backgroundImage="ic_waterprint_revolve"/>
+                                            <state key="highlighted" backgroundImage="ic_waterprint_revolve_pressed"/>
+                                            <connections>
+                                                <action selector="actionSwitchCamera:" destination="ZM9-7C-mPK" eventType="touchUpInside" id="fo8-Mt-Ocn"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Zm-rj-MKD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="547"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ic_waterprint_action_oriented" translatesAutoresizingMaskIntoConstraints="NO" id="Uld-IR-dlN">
+                                        <rect key="frame" x="67" y="84" width="240" height="96"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="photobuttonImageView" destination="wMd-Qy-iQU" id="Fvc-Zi-IUM"/>
+                        <outlet property="previewView" destination="5Zm-rj-MKD" id="W9I-RX-Jz2"/>
+                        <outlet property="waterImageView" destination="Uld-IR-dlN" id="7HO-VP-DU4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhy-Bz-4wU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1469.5999999999999" y="198.35082458770617"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="ic_select_selected" width="21" height="21"/>
         <image name="ic_sport_camera" width="27" height="27"/>
         <image name="ic_sport_finish" width="100" height="100"/>
         <image name="ic_sport_map" width="30" height="30"/>
         <image name="ic_sport_screenlight" width="50" height="50"/>
+        <image name="ic_waterprint_action_oriented" width="211" height="43"/>
+        <image name="ic_waterprint_close" width="32" height="32"/>
         <image name="ic_waterprint_close_pressed" width="32" height="32"/>
+        <image name="ic_waterprint_revolve" width="32" height="32"/>
+        <image name="ic_waterprint_revolve_pressed" width="32" height="32"/>
+        <image name="ic_waterprint_shutter" width="66" height="66"/>
+        <image name="ic_waterprint_shutter_pressed" width="66" height="66"/>
     </resources>
 </document>

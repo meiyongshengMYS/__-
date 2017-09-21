@@ -10,6 +10,8 @@
 		AC253B1A1F6E53FE002216E4 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC253B191F6E53FE002216E4 /* BaseViewController.m */; };
 		AC253B1F1F6EA103002216E4 /* animator.m in Sources */ = {isa = PBXBuildFile; fileRef = AC253B1E1F6EA103002216E4 /* animator.m */; };
 		AC253B221F6EA3DE002216E4 /* cycleAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = AC253B211F6EA3DE002216E4 /* cycleAnimator.m */; };
+		AC8A44241F71400B0070C948 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC8A44231F71400B0070C948 /* CameraViewController.m */; };
+		AC8A44261F720A370070C948 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8A44251F720A370070C948 /* AVFoundation.framework */; };
 		ACF119ED1F56D4D1007F2D55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF119EC1F56D4D1007F2D55 /* main.m */; };
 		ACF119F01F56D4D1007F2D55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF119EF1F56D4D1007F2D55 /* AppDelegate.m */; };
 		ACF119F31F56D4D1007F2D55 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF119F21F56D4D1007F2D55 /* ViewController.m */; };
@@ -30,6 +32,9 @@
 		AC253B1E1F6EA103002216E4 /* animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = animator.m; sourceTree = "<group>"; };
 		AC253B201F6EA3DE002216E4 /* cycleAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cycleAnimator.h; sourceTree = "<group>"; };
 		AC253B211F6EA3DE002216E4 /* cycleAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cycleAnimator.m; sourceTree = "<group>"; };
+		AC8A44221F71400B0070C948 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		AC8A44231F71400B0070C948 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		AC8A44251F720A370070C948 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		ACF119E81F56D4D1007F2D55 /* 3+2按钮.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "3+2按钮.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF119EC1F56D4D1007F2D55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ACF119EE1F56D4D1007F2D55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC8A44261F720A370070C948 /* AVFoundation.framework in Frameworks */,
 				ACF43C7D1F6BC15900759D70 /* CoreLocation.framework in Frameworks */,
 				ACF43C7B1F6BC11400759D70 /* MapKit.framework in Frameworks */,
 			);
@@ -83,6 +89,15 @@
 			path = HMAnimator;
 			sourceTree = "<group>";
 		};
+		AC8A44211F713FED0070C948 /* Camrea */ = {
+			isa = PBXGroup;
+			children = (
+				AC8A44221F71400B0070C948 /* CameraViewController.h */,
+				AC8A44231F71400B0070C948 /* CameraViewController.m */,
+			);
+			path = Camrea;
+			sourceTree = "<group>";
+		};
 		ACF119DF1F56D4D1007F2D55 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +120,7 @@
 			children = (
 				AC253B171F6E53E5002216E4 /* HMBase */,
 				AC253B1C1F6EA0E8002216E4 /* animator */,
+				AC8A44211F713FED0070C948 /* Camrea */,
 				ACF11A041F56D68F007F2D55 /* HMSportsViewController.h */,
 				ACF11A051F56D68F007F2D55 /* HMSportsViewController.m */,
 				ACF43C761F6BBCD800759D70 /* HMMapViewController.h */,
@@ -134,6 +150,7 @@
 		ACF43C791F6BC11400759D70 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AC8A44251F720A370070C948 /* AVFoundation.framework */,
 				ACF43C7C1F6BC15900759D70 /* CoreLocation.framework */,
 				ACF43C7A1F6BC11400759D70 /* MapKit.framework */,
 			);
@@ -171,6 +188,7 @@
 				TargetAttributes = {
 					ACF119E71F56D4D1007F2D55 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = CA8L9SM8KT;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -218,6 +236,7 @@
 				ACF43C781F6BBCD800759D70 /* HMMapViewController.m in Sources */,
 				ACF119F01F56D4D1007F2D55 /* AppDelegate.m in Sources */,
 				ACF11A061F56D68F007F2D55 /* HMSportsViewController.m in Sources */,
+				AC8A44241F71400B0070C948 /* CameraViewController.m in Sources */,
 				AC253B1A1F6E53FE002216E4 /* BaseViewController.m in Sources */,
 				ACF119ED1F56D4D1007F2D55 /* main.m in Sources */,
 			);
@@ -339,9 +358,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CA8L9SM8KT;
 				INFOPLIST_FILE = "3+2按钮/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mycompany.--2--";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompagkgkhjyfuk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -350,9 +371,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CA8L9SM8KT;
 				INFOPLIST_FILE = "3+2按钮/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.mycompany.--2--";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mycompagkgkhjyfuk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
